@@ -1,0 +1,58 @@
+.logo{
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgb(162, 158, 224), rgb(126, 126, 218));
+}
+
+.container{
+    max-width: 500px;
+    background-color: rgb(130, 147, 210);
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 65vh;
+    padding: 6px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+}
+
+.massage {
+    font-size: 10px;
+    background-color: gray;
+    width: 24%;
+    padding: 15px;
+    margin: 17px 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right{
+    float: right;
+    clear: both;
+}
+
+#send-container{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+#massageInp{
+    width: 56%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 24px;
+}
