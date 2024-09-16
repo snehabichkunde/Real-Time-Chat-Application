@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realtime Node Socket.io Chat App</title>
-    <script src="js/client.js"></script>
-    <link rel="stylesheet" href="style/style.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="logo" src="massageLogo.png" ></img>
+    <img class="logo" src="massage.png" alt="Chat Logo">
+    <div class="welcome-message">
+        <h2>Welcome to the Chat App!</h2>
+    </div>
     <div class="container">
-        <div class="massage left">Aaditya: Hi Sneha, how are you</div>
-        <div class="massage right">Sneha: Hey! I am good. How about you!!</div>
+        <!-- <div class="message left"> 
+            <h4 class="sender-name">Sneha</h4>
+            <p class="message-content">hi</p>
+        </div>
+        <div class="message right">
+            <h4 class="sender-name">Bhavya</h4> 
+            <p class="message-content">Hey</p>
+        </div> -->
     </div>
     <div class="send">
         <form action="#" id="send-container">
-            <input type="text" name="massageInp"  id="massageInp"></input>
+            <input type="text" name="messageInp" id="messageInp" required>
             <button class="button" type="submit">Send</button>
         </form>
     </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
 </body>
 </html>
